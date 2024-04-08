@@ -98,7 +98,7 @@ mongoose.connect('mongodb+srv://admin:admin@cluster0.kpg90l5.mongodb.net/assignm
 const server = new ApolloServer({
   typeDefs,
    resolvers: {
-    Query: {x
+    Query: {
       getAllEmployee: async()=>{
         return await Employees.find({});
       },
